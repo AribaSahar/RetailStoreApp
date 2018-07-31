@@ -1,0 +1,26 @@
+package com.store.retailclasses;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Test;
+
+public class EmployeeTest {
+
+	@Test
+	public void test() {
+		BillCalculator empTest = new BillCalculator();
+		Buyer purchaser = new Buyer("EMP","Employee","Steven",false); 
+		RetailItem Item1 = new RetailItem("A1", "apple", 65,true);
+		RetailItem Item2 = new RetailItem("B8", "towel", 60, false);
+		List<RetailItem> RetailItems = new ArrayList<RetailItem>();
+		RetailItems.add(Item1);
+		RetailItems.add(Item2);
+		
+		double totalBill = empTest.calculateBill(purchaser, RetailItems);
+		assertEquals(100.5, totalBill,0);
+	}
+
+}

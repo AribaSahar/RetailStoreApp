@@ -1,0 +1,5 @@
+package com.store.retailclasses;
+
+public class RetailItem {
+
+}

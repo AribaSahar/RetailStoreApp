@@ -1,0 +1,49 @@
+package com.store.retailclasses;
+
+public class Shopper {
+
+	private String shopperCode;
+	private String shopperDesc;
+	private String name;
+	private Boolean loyaltyCardHolder; //if it is true customer is 2 years old
+	
+	
+	public Shopper(String shopperCode, String shopperDesc, String name,
+			Boolean loyaltyCardHolder) {
+		super();
+		this.shopperCode = shopperCode;
+		this.shopperDesc = shopperDesc;
+		this.name = name;
+		this.loyaltyCardHolder = loyaltyCardHolder;
+	}
+	
+	//Getters and Setters
+	public String getShopperCode() {
+		return shopperCode;
+	}
+	public void setShopperCode(String shopperCode) {
+		this.shopperCode = shopperCode;
+	}
+	public String getShopperDesc() {
+		return shopperDesc;
+	}
+	public void setShopperDesc(String shopperDesc) {
+		this.shopperDesc = shopperDesc;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Boolean getLoyaltyCardHolder() {
+		return loyaltyCardHolder;
+	}
+	public void setLoyaltyCardHolder(Boolean loyaltyCardHolder) {
+		this.loyaltyCardHolder = loyaltyCardHolder;
+	}
+	
+	
+	
+	
+}

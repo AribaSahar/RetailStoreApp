@@ -1,0 +1,19 @@
+package com.store.retailclasses;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class BillCalculator {
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Buyer purchaser = new Buyer("EMP","Employee","Steven",false); 
+		RetailItem Item1 = new RetailItem("A1", "apple", 65,true);
+		RetailItem Item2 = new RetailItem("B8", "towel", 50, false);
+		
+		List<RetailItem> RetailItems = new ArrayList<RetailItem>();
+	}
+
+}
